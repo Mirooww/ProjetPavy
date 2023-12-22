@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: inherit;
+    color: white;
+}
+
+/* HEADER */
+
+header {
+    background-color: #0b0b0b;
+}
+
+.navbar {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    height: 50px;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbarLogoTitle {
+    margin-left: 7px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    height: 32px;
+    width: 32px;
+    border-radius: 25px;
+}
+
+.Title {
+    text-align: center;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    font-size: 20px;
+}
+
+.navbarSocial {
+    margin-right: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialTwitter,
+.socialInsta,
+.socialLinkedin {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 25px;
+    margin: 1px 2px 1px 2px;
+}
+
+.headerImage {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.headerImage img {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    opacity: 70%;
+    height: auto;
+    display: block;
+}
+
+/* FIN HEADER */

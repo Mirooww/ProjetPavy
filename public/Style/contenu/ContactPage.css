@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap");
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    background-color: black;
+    padding-top: 50px;
+    flex: 1;
+    width: 100%;
+    display: flex;
+
+}
+
+.formulaireInscription {
+    margin-top: 100px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.Form2X2 {
+    display: flex;
+}
+
+.formCase label {
+    display: block;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.formCase input,
+.Form1X1 input {
+    width: 200px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    text-align: center;
+
+}
+
+.Form1X1 label {
+    display: block;
+    text-align: center;
+}
+
+.Form2X2 input,
+.Form1X1 input {
+    margin: 10px;
+}
+
+.FormBouton {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 128, 0, 0.9);
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.Contact {
+    margin-left: 5%;
+    width: 55%;
+
+}
+
+.ContactHorairesAdresse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.HorairesAdresses {
+    display: flex;
+    margin-top: 30px;
+
+
+}
+
+.ThreeHorairesAdresses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 50%;
+
+}
+
+.Adresses {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.PhotoAdresse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PhotoAdresse img {
+
+    width: 80%;
+    margin: 10px;
+}

@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap");
+
+/* FOOTER */
+
+
+
+footer {
+   padding-top: 10px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   opacity: 0.7;
+   background-color: #0b0b0b;
+   padding-bottom: 50px;
+}
+
+.footerLeftBloc,
+.footerRightBloc {
+   width: 25%;
+   height: 130px;
+}
+
+.footerCenterBloc {
+   width: 35%;
+   height: 130px;
+
+}
+
+.footerPart1 {
+   height: 55%;
+}
+
+.footerPart1 h3 {
+   font-size: 12px;
+   margin-bottom: 8px;
+   font-family: "Baskerville Old Face", serif;
+
+
+}
+
+.footerPart1 p {
+   font-size: 8px;
+   margin-left: 8px;
+}
+
+.footerPart2 {
+   height: 35%;
+}
+
+.footerPart2 div {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   height: 60%;
+   background-color: rgba(137, 124, 124, 0.2);
+   border-radius: 25px;
+}
+
+.fa-brands {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50px;
+   background-color: black;
+   width: 30px;
+   height: 30px;
+}
+
+.footerPart2 h3 {
+   font-size: 12px;
+   padding-bottom: 10px;
+   font-family: "Baskerville Old Face", serif;
+
+}
+
+.footerPart3 {
+   margin-top: 40px;
+   font-size: 8px;
+   text-align: center;
+   height: 10%;
+   margin-bottom: 20px;
+}
+
+.RightBlocTitre {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 90%;
+   font-size: 33px;
+}
+
+@media screen and (min-width: 600px) {
+
+   .footerLeftBloc,
+   .footerRightBloc,
+   .footerCenterBloc {
+      height: 200px;
+   }
+
+   .footerPart1 h3 {
+      font-size: 24px;
+      text-align: center;
+
+
+   }
+
+   .footerPart1 p {
+      font-size: 20px;
+      text-align: center;
+
+   }
+
+   .footerPart2 h3 {
+      font-size: 24px;
+      text-align: center;
+
+
+   }
+
+   .footerPart3 {
+      font-size: 16px;
+      text-align: center;
+
+   }
+}
