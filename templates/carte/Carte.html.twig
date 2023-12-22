@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+{% block title %}Nexum - Menu{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('Style/contenu/Carte.css') }}">
+{% endblock %}
+
+{% block content %}
+<main>
+   <div class="NavSelecRegion">
+      <nav class="NavSelecRegionCategories">
+         <div><a href="{{ path('app_carte', {'categorie': 'Tout'}) }}">Tout</a></div>
+         {% for categorie in categories %}
+         <div><a href="{{ path('app_carte', {'categorie': categorie.getNom()}) }}">{{ categorie.getNom() }}</a></div>
+         {% endfor %}
+      </nav>
+   </div>
+
+
+
+
+   <div class="Items">
+      <section class="AffichagePlat">
+         {% for recette in recettes %}
+         <div class="BlocItem">
+            <div class="Container">
+               <div class="Plat">
+                  <a href="{{ path('app_recette', {'id': recette.getId()}) }}"><img src="{{ recette.getImg() }}"
+                        alt="{{ recette.getTitre() }}" class="ImagePlat" /></a>
+                  <div class="PlatDescri">
+                     <div>{{ recette.getTitre() }}</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         {% endfor %}
+      </section>
+   </div>
+</main>
+{% endblock %}

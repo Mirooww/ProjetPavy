@@ -13,5 +13,7 @@ main {
     padding-top: 50px;
     flex: 1;
 
-
+}
+.affichageUtilisateur{
+    box-shadow: 0 0 0 1px;
 }

@@ -2,21 +2,41 @@
 
 {% block title %}Hello HomeController!{% endblock %}
 {% block stylesheets %}
-<link rel="stylesheet" href="{{ asset('Style/contenu/Compte.css') }}">
+<link rel="stylesheet" href="{{ asset('Style/contenu/Home.css') }}">
 {% endblock %}
 {% block content %}
 
 
 <main>
+    <div class="affichageUtilisateur">
+        <h2>Bonjour : {{ app.user.email }}</h2>
+    </div>
+
     {% if app.user %}
-    <div class="mb-3">
-        You are logged in as {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Logout</a>
+    <div class="logOut">
+        <p>Voulez-vous vous déconnecter ?</p>
+        <a href="{{ path('app_logout') }}">Logout</a>
     </div>
     {% endif %}
-    <div class="example-wrapper">
-        <h1>Hello {{ controller_name }}! ✅</h1>
-        <p>Adresse mail : {{ app.user.email }}</p>
+
+    <div class="QuiSommesNous">
+        <div class="QuiTitle">
+            <h1>Qui Sommes Nous ?</h1>
+        </div>
+        <div class="QuiText">
+
+            Nous sommes Corentin R et Jordan L, les propriétaires de cette plateforme de guide de recette.
+            <br>
+            Nous espérons que nos recettes sauront satisfaire vos envies !
+        </div>
+        <div class="QuiCadrePhoto">
+            <img src="../image/IMG_20231031_141511.jpg" alt="Fondateur 1" class="QuiPhoto">
+            <img src="../image/Jordan.jpg" alt="Fondateur 2" class="QuiPhoto">
+        </div>
     </div>
+
+
+
 </main>
 
 

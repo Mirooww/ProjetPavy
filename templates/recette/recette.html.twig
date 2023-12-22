@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nexum - Plat en détails{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('Style/contenu/ZoomPlat.css') }}">
+{% endblock %}
+
+{% block content %}
+<main>
+    <div class="ZoomPlat">
+        <img src="{{ recette.getImg() }}" alt="{{ recette.getTitre() }}">
+        <h1 class="TitrePlat">{{ recette.getTitre() }}</h1>
+        <p class="DescriPlat">{{ recette.getDescription() }}</p>
+
+    </div>
+</main>
+{% endblock %}

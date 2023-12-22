@@ -4,9 +4,40 @@
 
 main {
     background-color: #1f1e1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+}
+.affichageUtilisateur{
+    margin-top: 50px;
+    width: 50%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+
 
 }
 
+.logOut{
+    margin-top: 30px;
+    width: 50%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logOut a {
+    display: flex;
+    background-color: white;
+    color: black;
+    width: 20%;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px 0;
+}
 .QuiSommesNous {
     display: flex;
     flex-direction: column;
