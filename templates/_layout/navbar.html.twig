@@ -1,0 +1,22 @@
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('Style/generique/navbar.css') }}">
+{% endblock %}
+
+<nav class="menuSelection">
+	<div>
+		{# <a href="{{path('app_menu', {'region': 'Tout'})}}">Menu</a> #}
+		<a href="#">Menu</a>
+	</div>
+	<div>
+		{# <a href="/panier">Panier</a> #}
+		<a href="#">Panier</a>
+	</div>
+	<div>
+		{# <a href="{{ path('app_connexion') }}">Compte</a> #}
+		<a href="#">Compte</a>
+	</div>
+	<div>
+		{# <a href="/contact">Contact</a> #}
+		<a href="#">Contact</a>
+	</div>
+</nav>

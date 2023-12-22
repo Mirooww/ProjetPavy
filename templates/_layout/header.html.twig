@@ -1,0 +1,30 @@
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('Style/generique/header.css') }}">
+{% endblock %}
+<header>
+	<div class="navbar">
+		<div class="navbarLogoTitle">
+			<div class="Logo">
+				<i class="fa-regular fa-snowflake"></i>
+			</div>
+			<div class="Title">
+				{# <a href="{{path('app_home')}}">ACME</a> #}
+				<a href="#">ACME</a>
+			</div>
+		</div>
+		<div class="navbarSocial">
+			<div class="socialTwitter">
+				<i class="fa-brands fa-twitter"></i>
+			</div>
+			<div class="socialInsta">
+				<i class="fa-brands fa-instagram"></i>
+			</div>
+			<div class="socialLinkedin">
+				<i class="fa-brands fa-linkedin"></i>
+			</div>
+		</div>
+	</div>
+	<div class="headerImage">
+		<img src="{{ asset('image/header1.jpg') }}" alt="HeaderPlatTofu">
+	</div>
+</header>

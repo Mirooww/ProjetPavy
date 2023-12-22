@@ -1,19 +1,40 @@
 {% extends 'base.html.twig' %}
 
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('Style/contenu/RegisterPage.css') }}">
+{% endblock %}
+
+
 {% block title %}Register{% endblock %}
 
-{% block body %}
-<h1>Register</h1>
+{% block content %}
+<main>
+    {{ form_errors(registrationForm) }}
+    <div class="formulaireInscription">
+        <h2> Veuillez vous inscrire : </h2>
+        {{ form_start(registrationForm) }}
+        <div class="Form1X1">
+            {{ form_row(registrationForm.email) }}
+        </div>
+        <div class="Form1X1">
+            {{ form_row(registrationForm.plainPassword, {
+            label: 'Password'
+            }) }}
+        </div>
+        <div class="Form1X1">
+            {{ form_row(registrationForm.agreeTerms) }}
+        </div>
 
-{{ form_errors(registrationForm) }}
+        <div class="FormBouton">
+            <button type="submit" class="btn">Register</button>
+        </div>
+        {{ form_end(registrationForm) }}
+        <a href="/register">
+            Pas de compte ?
+        </a>
+    </div>
 
-{{ form_start(registrationForm) }}
-{{ form_row(registrationForm.email) }}
-{{ form_row(registrationForm.plainPassword, {
-label: 'Password'
-}) }}
-{{ form_row(registrationForm.agreeTerms) }}
+</main>
 
-<button type="submit" class="btn">Register</button>
-{{ form_end(registrationForm) }}
+
 {% endblock %}
